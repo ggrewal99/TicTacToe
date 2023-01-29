@@ -45,7 +45,10 @@ void TicTacToe::removeMove(int row, int col) {
 void TicTacToe::updateEmptyCells(int x, int y) {
 	emptyCells.remove(x*3+y);
 }
-
+/*********************************
+Author: Prof. Dongmo Zhang (Western Sydney University)
+Date: unknown
+*/
 void TicTacToe::displayBoard() {
 	cout << "   1    2    3" << endl;
     cout << "  - - - - - - - -"<<endl;
@@ -67,6 +70,8 @@ void TicTacToe::displayBoard() {
 	}
 	cout << "  - - - - - - - -" << endl;
 }
+/*
+*************************************/
 
 bool TicTacToe::isValidMove(int row, int col) const {
 	if (row >= 0 && row <= 2 && col >= 0 && col <= 2 && board[row][col] == ' ')

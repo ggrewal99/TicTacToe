@@ -47,6 +47,10 @@ char Game::play() {
     return board.gameStatus();
 }
 
+/*********************************
+Author: Prof. Dongmo Zhang (Western Sydney University)
+Date: unknown
+*/
 bool Game::checkWin(char player, TicTacToe board) {
 	char gStatus = board.gameStatus();
 	if (gStatus == player) {
@@ -60,5 +64,7 @@ bool Game::checkWin(char player, TicTacToe board) {
 	} else
 		return false;
 }
+/*
+*************************************/
 
 #endif
