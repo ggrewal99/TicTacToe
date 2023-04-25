@@ -17,7 +17,7 @@ public:
 
 char Game::play()
 {
-	MiniMaxPlayer p1('X');
+	HumanPlayer p1('X');
 	MiniMaxPlayer p2('O');
 	// board.displayBoard();
 	bool done = false;
