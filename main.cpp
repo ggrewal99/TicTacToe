@@ -13,37 +13,39 @@
 
 using namespace std;
 
-int main() {
+int main()
+{
 	srand(time(0));
 
-
-/* Run the games n number of times
+	//	Run the games n number of times
 	int noOfGames = 1000;
 	int wins = 0;
 	int losses = 0;
 	int draws = 0;
-	for(int i = 0; i < 1000; i++) {
+	for (int i = 0; i < 1000; i++)
+	{
 		Game game;
 		char result = game.play();
-		cout << result << endl;
-		if(result == 'X') {
+		// cout << result << endl;
+		if (result == 'X')
+		{
 			wins++;
 		}
-		else if(result == 'O') {
+		else if (result == 'O')
+		{
 			losses++;
 		}
-		else {
+		else
+		{
 			draws++;
 		}
 	}
-	cout << "Wins: " << wins << endl;
-	cout << "Losses: " << losses << endl;
+	cout << "X: " << wins << endl;
+	cout << "O: " << losses << endl;
 	cout << "Draws: " << draws << endl;
-*/
 
-
-	Game game;
-	game.play();
+	// Game game;
+	// game.play();
 
 	return 0;
 }
